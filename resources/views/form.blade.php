@@ -16,11 +16,11 @@
           <label class="label">お名前<span>※</span></label>
           <div class="input_name">
             <div class="input_name_items">
-              <input class="input_name_item" type="text" name="last_name" value="{{old('last_name')}}">
+              <input class="input_name_item" type="text" name="last_name" value="{{old('last_name')}}" required>
               <p class="example">例）山田</p>
             </div>
             <div class="input_name_items">
-              <input class="input_name_item" type="text" name="first_name" value="{{old('first_name')}}">
+              <input class="input_name_item" type="text" name="first_name" value="{{old('first_name')}}" required>
               <p class="example">例）太郎</p>
             </div>
           </div>

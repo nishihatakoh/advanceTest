@@ -37,6 +37,7 @@
       <a href="/manage" class="reset">リセット</a>
     </form>
   </div>
+  {{ $items->links() }}
   <table>
     <tr>
       <th>ID</th>

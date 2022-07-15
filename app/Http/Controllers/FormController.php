@@ -64,7 +64,7 @@ class FormController extends Controller
             $query->where('email', 'LIKE', "%{$email}%");
         }
 
-        $items = $query->get();
+        $items = $query->paginate(5);
 
 
         return view('/manage',compact('items' , 'keyword',  'gender', 'email'));
