@@ -10,7 +10,7 @@ class FormController extends Controller
 {
     public function index ()
     {
-        return view('form');
+        return view('/form');
     }
 
     public function check(Request $request)

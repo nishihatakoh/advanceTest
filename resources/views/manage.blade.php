@@ -6,16 +6,19 @@
 @endsection
 
 @section('content')
+<!--                     　　管理システム　　　                        -->
 <div class="main">
   <h1 class="main-ttl">管理システム</h1>
   <div class="find">
     <form action="/manage/find" method="POST" class="find_form">
       @csrf
       <div class="items">
+        <!-- お名前 -->
         <div class="item">
           <p class="label">お名前</p>
           <input type="text" name="keyword" value="{{ old('keyword') }}" class="input">
         </div>
+        <!-- 性別 -->
         <div class="item">
           <p class="label">性別</p>
           <input type="radio" name="gender" value="" checked="checked" class="radio"><label class="gender">全て</label>
@@ -23,12 +26,14 @@
           <input type="radio" name="gender" value="2" class="radio"><label class="gender">女性</label>
         </div>
       </div>
+      <!-- 登録日 -->
       <div class="item">
         <p class="label">登録日</p>
         <input type="date" name="from" class="input date">
         <label class="from">~</label>
         <input type="date" name="until" class="input date">
       </div>
+      <!-- メールアドレス -->
       <div class="item">
         <p class="label">メールアドレス</p>
         <input type="text" name="email" class="input" value="{{ old('email') }}">
@@ -37,6 +42,7 @@
       <a href="/manage" class="reset">リセット</a>
     </form>
   </div>
+  <!-- 　　　　　　　　　　　　　データ一覧　　　　　　　　　　　　　　 -->
   {{ $items->links() }}
   <table>
     <tr>

@@ -3,18 +3,18 @@
 return [
 
     /*
-      |--------------------------------------------------------------------------
-      | Validation Language Lines
-      | 検証言語
-      |--------------------------------------------------------------------------
-      |
-      | The following language lines contain the default error messages used by
-      | the validator class. Some of these rules have multiple versions such
-      | as the size rules. Feel free to tweak each of these messages here.
-      |
-      | 次の言語行には、バリデータークラスで使用されるデフォルトのエラーメッセージが含まれています。
-      | これらの規則の中には、サイズ規則などの複数のバージョンがあります。
-      | これらのメッセージのそれぞれをここで微調整してください。
+    ß|--------------------------------------------------------------------------
+    | Validation Language Lines
+    | 検証言語
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    | 次の言語行には、バリデータークラスで使用されるデフォルトのエラーメッセージが含まれています。
+    | これらの規則の中には、サイズ規則などの複数のバージョンがあります。
+    | これらのメッセージのそれぞれをここで微調整してください。
     */
 
     'accepted'             => ':attribute が未承認です',
@@ -140,22 +140,24 @@ return [
     ],
 
     /*
-      |--------------------------------------------------------------------------
-      | Custom Validation Attributes
-      | カスタム検証属性
-      |--------------------------------------------------------------------------
-      |
-      | The following language lines are used to swap attribute place-holders
-      | with something more reader friendly such as E-Mail Address instead
-      | of "email". This simply helps us make messages a little cleaner.
-      |
-      | 次の言語行は、属性プレースホルダを「email」ではなく「E-Mail Address」などの
-      | 読みやすいものと交換するために使用されます。
-      |
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    | カスタム検証属性
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    | 次の言語行は、属性プレースホルダを「email」ではなく「E-Mail Address」などの
+    | 読みやすいものと交換するために使用されます。
+    |
     */
 
     'attributes' => [
         'fullname' => 'お名前',
+        'last_name' => '氏名',
+        'first_name' => '名前',
         'gender' => '性別',
         'email' => 'メールアドレス',
         'postcode' => '郵便番号',
